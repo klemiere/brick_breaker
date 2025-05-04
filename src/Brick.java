@@ -4,6 +4,7 @@ public class Brick {
     int positionX, positionY, width, height;
     int health = 3;
     boolean solid = true;
+    boolean wasHit = false;
 
     Brick(int positionX, int positionY, int width, int height){
 
@@ -40,6 +41,10 @@ public class Brick {
                 solid = false;
                 break;
         }
+    }
+
+    public void resetHit(){
+        wasHit = false;
     }
 
 }
