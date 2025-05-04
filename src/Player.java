@@ -10,7 +10,7 @@ public class Player {
         this.height = height;
     }
 
-    void drawPlayer(Graphics g){
+    void draw(Graphics g){
         g.setColor(Color.WHITE);
         g.drawRect(positionX, positionY, width, height);
     }
